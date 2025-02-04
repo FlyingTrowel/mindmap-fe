@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Create from './pages/Create';
 import View from './pages/View';
+import MindMapCanvas from './components/mindmap/MindMapCanvas';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: 'view',
         element: <View />,
+      },
+      {
+        path: 'mindmap/:id',
+        element: <MindMapCanvas />,
       },
     ],
   },
